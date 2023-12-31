@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 400px;
+    
+}
+body{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    padding: 8px 40px;
+    margin:20px 70px;
+    background-color:#58b1d1;
+    border: 2px solid black ;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+}
+button:active{
+    background-color: black;
+    border: 2px solid white;
+    color: rgb(255, 170, 0);
+}
+
+
+</style>
+</head>
+
+<body>
+    <img src="off.webp"" alt="" id="img"><br>
+    <div>
+        <button id="on">Turn On</button>
+        <button id="off">Turn Off</button>
+    </div>
+
+    <script>
+       document.getElementById("on").addEventListener("click",()=>{
+        document.getElementById("img").src="on.webp"
+        
+       })
+       document.getElementById("off").addEventListener("click",()=>{
+        document.getElementById("img").src="off.webp"
+        
+       })
+    </script>
+</body>
+</html>

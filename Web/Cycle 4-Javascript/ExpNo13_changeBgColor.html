@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+<style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            transition: .5s;
+        }
+        h1{
+            
+            letter-spacing:3px;
+            user-select: none;
+            color: white;
+        }
+</style>
+</head>
+<body>
+    <h2>Double tap to change back ground color to green </h1>
+	<h2>Single tap to change back ground color to green </h1>
+    <script>
+        document.addEventListener("click", () => {
+            document.body.style.background = "red";
+        })
+        document.addEventListener("dblclick", () => {
+            document.body.style.background = "green";
+        })
+    </script>
+</body>
+</html>

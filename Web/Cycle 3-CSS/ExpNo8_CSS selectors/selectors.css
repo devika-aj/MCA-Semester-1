@@ -1,0 +1,21 @@
+h1{
+	text-align:center;
+}
+p{
+	color:blue;
+	background-color:yellow;
+}
+#ex_id{
+	color:red;
+	background-color:lightblue;
+}
+.ex_cls{
+	color:red;
+	background-color:lightgreen;
+}
+.one{
+	color:white;
+	background-color:black;
+}
+
+
